@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Bungee Inline', cursive;
+  width: 960px;
+  margin: 0 auto;
+  background-color: lightblue;
+}
+
+h1, h4 {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  width: 490px;
+  margin: auto;
+  font-size: 0;
+}
+
+.boarder{
+  border-width: 0 3px 3px 3px;
+  padding-top: 8px;
+  border-style: solid;
+  padding-left: 8px;
+}
+
+ul li {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border: 3px solid black;
+  border-radius: 50%;
+  margin-bottom: 8px;
+  margin-right: 8px;
+}
+
+ul li.occupied {
+  border-radius: 50%;
+  border-width: 3px;
+}
+
+ul li.occupied.player1 {
+  background: yellow;
+}
+
+ul li.occupied.player2 {
+  background: red;
+}
+
+.slots {
+  clear: both;
+  margin-top: 95px;
+  padding-left: 11px;
+}
+
+.slots li {
+  border-radius: 50%;
+  border-color: transparent;
+}
+
+.slots li:hover {
+  border-color: black;
+  background-color: yellow;
+}
+
+.slots.grey li:hover {
+  background-color: red;
+}
+
+h1 {
+  font-size: 60px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+h2.player_1 {
+  float: left;
+  font-size: xx-large;
+  margin-left: 75px;
+  color: yellow;
+}
+
+h2.player_2 {
+  float: right;
+  font-size: xx-large;
+  margin-right: 75px;
+  color: red;
+}
+
+h2.winner {
+  text-align: center;
+  margin-top: 22px;
+  font-size: 30px;
+}
+
+div.reset_btn {
+  text-align: center;
+  margin-top: 15px;
+}
+
+div.reset_btn button {
+  font-size: 20px;
+  border-radius: 4px;
+  color: white;
+  background-color: black;
+  outline: none;
+  font-family: 'Space Mono', monospace;
+  padding: 5px 15px;
+}
+
+#imageHeader {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
